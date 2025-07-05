@@ -215,7 +215,6 @@ function handler(ip) {
         for (const handler_func of randomized) {
             region2 = handler_func(ip);
             if (region2) {
-                console.log(region2)
                 region2 = remove_position(region2);
                 ret.country_code += region2;
                 if (is_weiyi(ret.ip)) {
